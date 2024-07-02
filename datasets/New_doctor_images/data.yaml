@@ -1,0 +1,5 @@
+train: C:/Mini Project/Intel Project/datasets/New_doctor_images/train/images
+val: C:/Mini Project/Intel Project/datasets/New_doctor_images/test/images
+
+nc: 2  # Number of classes
+names: ['doctor', 'patient']  # Class names
