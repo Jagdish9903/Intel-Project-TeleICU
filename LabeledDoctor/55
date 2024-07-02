@@ -1,0 +1,128 @@
+{
+  "id": 55,
+  "created_username": " jagdishsuthar4413@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "jagdishsuthar4413@gmail.com"
+  },
+  "task": {
+    "id": 1656,
+    "data": {
+      "image": "/data/local-files/?d=DoctorImages%5Cimg148.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-06-12T10:04:08.217020Z",
+    "updated_at": "2024-06-12T10:04:08.217020Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 56,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 2,
+    "updated_by": null,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "original_width": 493,
+      "original_height": 280,
+      "image_rotation": 0,
+      "value": {
+        "x": 0,
+        "y": 0.1978330658105939,
+        "width": 20.449438202247194,
+        "height": 57.96508828250402,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "MqR0cXsz2J",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 493,
+      "original_height": 280,
+      "image_rotation": 0,
+      "value": {
+        "x": 14.382022471910094,
+        "y": 1.384831460674157,
+        "width": 14.157303370786536,
+        "height": 50.24959871589086,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "eFbeEx1t0_",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 493,
+      "original_height": 280,
+      "image_rotation": 0,
+      "value": {
+        "x": 42.92134831460673,
+        "y": 4.945826645264847,
+        "width": 12.022471910112326,
+        "height": 47.87560192616369,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "Nd2uSkuk0b",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 493,
+      "original_height": 280,
+      "image_rotation": 0,
+      "value": {
+        "x": 22.134831460674157,
+        "y": 53.21709470304976,
+        "width": 27.07865168539325,
+        "height": 19.3876404494382,
+        "rotation": 0,
+        "rectanglelabels": [
+          "patient"
+        ]
+      },
+      "id": "LMX3TfuvKo",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-06-12T10:48:29.947095Z",
+  "updated_at": "2024-06-12T10:48:29.947095Z",
+  "draft_created_at": "2024-06-12T10:47:46.647443Z",
+  "lead_time": 57.239,
+  "import_id": null,
+  "last_action": null,
+  "project": 2,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

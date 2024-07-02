@@ -1,0 +1,88 @@
+{
+  "id": 120,
+  "created_username": " jagdishsuthar4413@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "jagdishsuthar4413@gmail.com"
+  },
+  "task": {
+    "id": 1721,
+    "data": {
+      "image": "/data/local-files/?d=DoctorImages%5Cimg206.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-06-12T10:04:13.099431Z",
+    "updated_at": "2024-06-12T10:04:13.099431Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 121,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 2,
+    "updated_by": null,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "original_width": 390,
+      "original_height": 280,
+      "image_rotation": 0,
+      "value": {
+        "x": 0,
+        "y": 2.4253731343283578,
+        "width": 45.809414466130896,
+        "height": 70.1492537313433,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "m5-8UM9zfA",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 390,
+      "original_height": 280,
+      "image_rotation": 0,
+      "value": {
+        "x": 53.84615384615385,
+        "y": 23.69402985074627,
+        "width": 43.26444699579029,
+        "height": 40.85820895522388,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "xVAHWZatWv",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-06-12T11:24:29.151465Z",
+  "updated_at": "2024-06-12T11:24:29.151465Z",
+  "draft_created_at": "2024-06-12T11:24:14.660500Z",
+  "lead_time": 26.315,
+  "import_id": null,
+  "last_action": null,
+  "project": 2,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

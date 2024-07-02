@@ -1,0 +1,68 @@
+{
+  "id": 60,
+  "created_username": " jagdishsuthar4413@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "jagdishsuthar4413@gmail.com"
+  },
+  "task": {
+    "id": 1661,
+    "data": {
+      "image": "/data/local-files/?d=DoctorImages%5Cimg152.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-06-12T10:04:08.334740Z",
+    "updated_at": "2024-06-12T10:04:08.334740Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 61,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 2,
+    "updated_by": null,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "original_width": 390,
+      "original_height": 280,
+      "image_rotation": 0,
+      "value": {
+        "x": 32.95063145809414,
+        "y": 21.641791044776117,
+        "width": 55.45350172215844,
+        "height": 54.477611940298516,
+        "rotation": 0,
+        "rectanglelabels": [
+          "patient"
+        ]
+      },
+      "id": "MtG5pHFh0F",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-06-12T10:51:04.981808Z",
+  "updated_at": "2024-06-12T10:51:04.981808Z",
+  "draft_created_at": "2024-06-12T10:50:57.831201Z",
+  "lead_time": 18.782,
+  "import_id": null,
+  "last_action": null,
+  "project": 2,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

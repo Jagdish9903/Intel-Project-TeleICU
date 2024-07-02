@@ -1,0 +1,88 @@
+{
+  "id": 30,
+  "created_username": " jagdishsuthar4413@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "jagdishsuthar4413@gmail.com"
+  },
+  "task": {
+    "id": 1631,
+    "data": {
+      "image": "/data/local-files/?d=DoctorImages%5Cimg125.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-06-12T10:04:07.616663Z",
+    "updated_at": "2024-06-12T10:04:07.616663Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 31,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 2,
+    "updated_by": null,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "original_width": 390,
+      "original_height": 280,
+      "image_rotation": 0,
+      "value": {
+        "x": 50.63145809414464,
+        "y": 0,
+        "width": 49.368541905855245,
+        "height": 92.35074626865674,
+        "rotation": 0,
+        "rectanglelabels": [
+          "patient"
+        ]
+      },
+      "id": "GgkiIutnb7",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 390,
+      "original_height": 280,
+      "image_rotation": 0,
+      "value": {
+        "x": 0.4018369690011481,
+        "y": 72.76119402985076,
+        "width": 21.967087638729428,
+        "height": 20.522388059701484,
+        "rotation": 0,
+        "rectanglelabels": [
+          "patient"
+        ]
+      },
+      "id": "V83qcvDmDA",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-06-12T10:32:55.758814Z",
+  "updated_at": "2024-06-12T10:32:55.758814Z",
+  "draft_created_at": "2024-06-12T10:32:38.161209Z",
+  "lead_time": 33.224,
+  "import_id": null,
+  "last_action": null,
+  "project": 2,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}
