@@ -1,0 +1,108 @@
+{
+  "id": 482,
+  "created_username": " jagdishsuthar4413@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "jagdishsuthar4413@gmail.com"
+  },
+  "task": {
+    "id": 2943,
+    "data": {
+      "image": "/data/local-files/?d=Intel%20Project%5CICU%20season%201%5Cicu%2026.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-07-03T16:32:07.364310Z",
+    "updated_at": "2024-07-03T16:32:07.364310Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 180,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 4,
+    "updated_by": null,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "original_width": 1280,
+      "original_height": 576,
+      "image_rotation": 0,
+      "value": {
+        "x": 38.382352941176464,
+        "y": 37.254901960784316,
+        "width": 20.845588235294123,
+        "height": 51.47058823529411,
+        "rotation": 0,
+        "rectanglelabels": [
+          "patient"
+        ]
+      },
+      "id": "-VnTPZdft1",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 1280,
+      "original_height": 576,
+      "image_rotation": 0,
+      "value": {
+        "x": 22.389705882352935,
+        "y": 25.735294117647058,
+        "width": 17.426470588235297,
+        "height": 74.26470588235289,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "CK9m0vw4Na",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 1280,
+      "original_height": 576,
+      "image_rotation": 0,
+      "value": {
+        "x": 58.89705882352943,
+        "y": 3.4313725490196068,
+        "width": 23.382352941176503,
+        "height": 96.56862745098036,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "GhlD97rptn",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-03T18:12:50.572347Z",
+  "updated_at": "2024-07-03T18:12:50.572347Z",
+  "draft_created_at": "2024-07-03T18:12:27.068164Z",
+  "lead_time": 35.633,
+  "import_id": null,
+  "last_action": null,
+  "project": 4,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

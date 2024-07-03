@@ -1,0 +1,108 @@
+{
+  "id": 549,
+  "created_username": " jagdishsuthar4413@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "jagdishsuthar4413@gmail.com"
+  },
+  "task": {
+    "id": 3010,
+    "data": {
+      "image": "/data/local-files/?d=Intel%20Project%5CICU%20season%201%5Cicu%2032.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-07-03T16:32:08.813378Z",
+    "updated_at": "2024-07-03T16:32:08.813378Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 247,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 4,
+    "updated_by": null,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "original_width": 1280,
+      "original_height": 576,
+      "image_rotation": 0,
+      "value": {
+        "x": 15.441176470588234,
+        "y": 48.529411764705884,
+        "width": 54.37499999999999,
+        "height": 39.95098039215687,
+        "rotation": 0,
+        "rectanglelabels": [
+          "patient"
+        ]
+      },
+      "id": "2FdEbpeEGa",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 1280,
+      "original_height": 576,
+      "image_rotation": 0,
+      "value": {
+        "x": 30.661764705882312,
+        "y": 22.54901960784312,
+        "width": 19.963235294117688,
+        "height": 35.04901960784312,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "Ee_dkjIVom",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 1280,
+      "original_height": 576,
+      "image_rotation": 0,
+      "value": {
+        "x": 70.91911764705883,
+        "y": 22.794117647058812,
+        "width": 20.183823529411736,
+        "height": 73.52941176470583,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "EZKtW-Ruca",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-03T19:10:31.892577Z",
+  "updated_at": "2024-07-03T19:10:31.892577Z",
+  "draft_created_at": "2024-07-03T19:10:12.033608Z",
+  "lead_time": 28.927,
+  "import_id": null,
+  "last_action": null,
+  "project": 4,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

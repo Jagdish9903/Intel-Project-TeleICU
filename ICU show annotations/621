@@ -1,0 +1,108 @@
+{
+  "id": 621,
+  "created_username": " jagdishsuthar4413@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "jagdishsuthar4413@gmail.com"
+  },
+  "task": {
+    "id": 3082,
+    "data": {
+      "image": "/data/local-files/?d=Intel%20Project%5CICU%20season%201%5Cicu%206.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-07-03T16:32:10.356993Z",
+    "updated_at": "2024-07-03T16:32:10.356993Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 319,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 4,
+    "updated_by": null,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "original_width": 1280,
+      "original_height": 576,
+      "image_rotation": 0,
+      "value": {
+        "x": 20.625,
+        "y": 69.11764705882354,
+        "width": 49.632352941176464,
+        "height": 30.882352941176432,
+        "rotation": 0,
+        "rectanglelabels": [
+          "patient"
+        ]
+      },
+      "id": "kESsJnEWX2",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 1280,
+      "original_height": 576,
+      "image_rotation": 0,
+      "value": {
+        "x": 31.54411764705883,
+        "y": 33.57843137254901,
+        "width": 19.52205882352941,
+        "height": 47.79411764705883,
+        "rotation": 0,
+        "rectanglelabels": [
+          "person"
+        ]
+      },
+      "id": "Bb2Z2kbDRC",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 1280,
+      "original_height": 576,
+      "image_rotation": 0,
+      "value": {
+        "x": 48.860294117647044,
+        "y": 5.147058823529411,
+        "width": 26.91176470588234,
+        "height": 92.89215686274508,
+        "rotation": 0,
+        "rectanglelabels": [
+          "person"
+        ]
+      },
+      "id": "Q5--bMuq7O",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-03T20:57:34.687847Z",
+  "updated_at": "2024-07-03T20:57:34.687847Z",
+  "draft_created_at": "2024-07-03T20:57:17.167901Z",
+  "lead_time": 27.063,
+  "import_id": null,
+  "last_action": null,
+  "project": 4,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

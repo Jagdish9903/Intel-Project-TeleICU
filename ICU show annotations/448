@@ -1,0 +1,68 @@
+{
+  "id": 448,
+  "created_username": " jagdishsuthar4413@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "jagdishsuthar4413@gmail.com"
+  },
+  "task": {
+    "id": 2909,
+    "data": {
+      "image": "/data/local-files/?d=Intel%20Project%5CICU%20season%201%5Cicu%20229.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-07-03T16:32:06.639852Z",
+    "updated_at": "2024-07-03T16:32:06.639852Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 146,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 4,
+    "updated_by": null,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "original_width": 1280,
+      "original_height": 576,
+      "image_rotation": 0,
+      "value": {
+        "x": 17.977941176470587,
+        "y": 23.284313725490193,
+        "width": 65.84558823529409,
+        "height": 76.71568627450975,
+        "rotation": 0,
+        "rectanglelabels": [
+          "patient"
+        ]
+      },
+      "id": "Yu2rmaEWZD",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-03T17:50:53.764872Z",
+  "updated_at": "2024-07-03T17:50:53.764872Z",
+  "draft_created_at": "2024-07-03T17:50:50.107272Z",
+  "lead_time": 13.488,
+  "import_id": null,
+  "last_action": null,
+  "project": 4,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

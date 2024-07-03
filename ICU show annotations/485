@@ -1,0 +1,88 @@
+{
+  "id": 485,
+  "created_username": " jagdishsuthar4413@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "jagdishsuthar4413@gmail.com"
+  },
+  "task": {
+    "id": 2946,
+    "data": {
+      "image": "/data/local-files/?d=Intel%20Project%5CICU%20season%201%5Cicu%20262.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-07-03T16:32:07.428426Z",
+    "updated_at": "2024-07-03T16:32:07.428426Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 183,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 4,
+    "updated_by": null,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "original_width": 1600,
+      "original_height": 720,
+      "image_rotation": 0,
+      "value": {
+        "x": 9.04411764705881,
+        "y": 50.980392156862756,
+        "width": 65.07352941176467,
+        "height": 49.01960784313715,
+        "rotation": 0,
+        "rectanglelabels": [
+          "patient"
+        ]
+      },
+      "id": "92ZPRmuGAl",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    },
+    {
+      "original_width": 1600,
+      "original_height": 720,
+      "image_rotation": 0,
+      "value": {
+        "x": 18.41911764705882,
+        "y": 7.107843137254897,
+        "width": 25.919117647058833,
+        "height": 65.4411764705882,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "nbSSSoex55",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-03T18:14:33.604563Z",
+  "updated_at": "2024-07-03T18:14:33.604563Z",
+  "draft_created_at": "2024-07-03T18:14:17.870486Z",
+  "lead_time": 34.845,
+  "import_id": null,
+  "last_action": null,
+  "project": 4,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

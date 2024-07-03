@@ -1,0 +1,68 @@
+{
+  "id": 578,
+  "created_username": " jagdishsuthar4413@gmail.com, 1",
+  "created_ago": "0\u00a0minutes",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "jagdishsuthar4413@gmail.com"
+  },
+  "task": {
+    "id": 3039,
+    "data": {
+      "image": "/data/local-files/?d=Intel%20Project%5CICU%20season%201%5Cicu%20346.jpg"
+    },
+    "meta": {},
+    "created_at": "2024-07-03T16:32:09.432670Z",
+    "updated_at": "2024-07-03T16:32:09.432670Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 276,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 4,
+    "updated_by": null,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "original_width": 1600,
+      "original_height": 720,
+      "image_rotation": 0,
+      "value": {
+        "x": 20.40441176470587,
+        "y": 8.088235294117652,
+        "width": 70.69852941176471,
+        "height": 91.91176470588226,
+        "rotation": 0,
+        "rectanglelabels": [
+          "doctor"
+        ]
+      },
+      "id": "v4LnfkwOOA",
+      "from_name": "label",
+      "to_name": "image",
+      "type": "rectanglelabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-03T20:38:22.368983Z",
+  "updated_at": "2024-07-03T20:38:22.368983Z",
+  "draft_created_at": "2024-07-03T20:38:19.724870Z",
+  "lead_time": 14.158,
+  "import_id": null,
+  "last_action": null,
+  "project": 4,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}
