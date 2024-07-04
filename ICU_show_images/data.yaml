@@ -1,0 +1,5 @@
+train: train/images
+val: test/images
+
+nc: 3  # Number of classes
+names: ['doctor', 'patient', 'person']  # Class names

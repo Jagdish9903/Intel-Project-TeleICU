@@ -1,0 +1,5 @@
+train: datasets/ICU_show_images/train/images
+val: datasets/ICU_show_images/test/images
+
+nc: 3  # Number of classes
+names: ['doctor', 'patient', 'person']  # Class names
