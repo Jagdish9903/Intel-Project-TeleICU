@@ -1,11 +1,11 @@
 import streamlit as st
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from multiprocessing import Pool, cpu_count
 from tqdm import tqdm
 import cv2
 from ultralytics import YOLO
 import os
-import tempfile
-from datetime import datetime
+import datetime
+import time
 
 # Load the YOLO model
 model_path = 'icu_show_images_model.pt'
@@ -20,11 +20,8 @@ def process_frame(frame):
         print(f"Error processing frame: {e}")
         return frame
 
-def process_video(video_file, output_path):
-    with open(video_file.name, 'wb') as f:
-        f.write(video_file.read())
-
-    cap = cv2.VideoCapture(video_file.name)
+def process_video(video_path, output_path):
+    cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
         st.error("Error opening video file.")
         return
@@ -38,6 +35,7 @@ def process_video(video_file, output_path):
     out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
 
     frames = []
+    index = 0
     while cap.isOpened():
         ret, frame = cap.read()
         if not ret:
@@ -46,29 +44,35 @@ def process_video(video_file, output_path):
 
     cap.release()
 
-    with ThreadPoolExecutor(max_workers=8) as executor:
-        futures = [executor.submit(process_frame, frame) for frame in frames]
-        for future in tqdm(as_completed(futures), total=frame_count, desc="Processing Frames"):
-            annotated_frame = future.result()
+    num_cores = min(cpu_count() - 2, 6)  # Use up to 5 or 6 cores, leaving some for the system
+    with Pool(num_cores) as pool:
+        for annotated_frame in tqdm(pool.imap(process_frame, frames), total=frame_count, desc="Processing Frames"):
             out.write(annotated_frame)
 
     out.release()
-
-    os.remove(video_file.name)
+    os.remove(video_path)
     st.success(f"Processed video saved to: {output_path}")
     return output_path
 
 # Streamlit UI
-st.title('ICU Video Processing with YOLOv8')
-uploaded_file = st.file_uploader("Upload a video", type=["mp4"])
+st.title('Video Processing with YOLO')
+uploaded_file = st.file_uploader("Upload a video", type=["mp4", "avi"])
 
 if uploaded_file is not None:
-    processing_placeholder = st.empty()
-    processing_placeholder.write("Processing...")
+    placeholder = st.empty()
+    placeholder.write("Processing...")
+
+    # Save the uploaded video temporarily
+    temp_dir = "temp"
+    if not os.path.exists(temp_dir):
+        os.makedirs(temp_dir)
+    video_path = os.path.join(temp_dir, uploaded_file.name)
+    with open(video_path, "wb") as f:
+        f.write(uploaded_file.read())
 
     # Process the video
-    timestamp = datetime.now().strftime('%H%M%S')
-    output_video_path = 'processed_video_' + timestamp + '.mp4'
-    processed_video_path = process_video(uploaded_file, output_video_path)
+    output_video_path = 'processed_video_' + str(datetime.datetime.now().strftime("%H%M%S")) + '.mp4'
+    processed_video_path = process_video(video_path, output_video_path)
 
-    processing_placeholder.empty()
+    placeholder.empty()
+    st.write("Processing... done!")
