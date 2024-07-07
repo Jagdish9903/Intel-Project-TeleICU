@@ -5,11 +5,16 @@ import cv2
 from ultralytics import YOLO
 import os
 import datetime
-import time
+import torch
 
 # Load the YOLO model
 model_path = 'icu_show_images_model.pt'
 model = YOLO(model_path)
+
+# Check if GPU is available and in use
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+model.to(device)
+st.write(f"Using device: {device}")
 
 def process_frame(frame):
     try:
