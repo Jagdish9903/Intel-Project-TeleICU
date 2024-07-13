@@ -27,6 +27,8 @@ def process_frame(frame, frame_index):
         try:
             results = model.predict(source=frame, conf=0.25)
             global_boxes = results[0].boxes
+            print(global_boxes)
+            a = input()
         except Exception as e:
             print(f"Error processing frame: {e}")
             global_boxes = None
