@@ -1,4 +1,6 @@
 
+https://github.com/user-attachments/assets/e5dc359d-ceae-4f0a-a792-bae0f61d3e43
+
 https://github.com/user-attachments/assets/a18fe836-af66-4d2b-a927-f8aa690554aa
 
 https://github.com/user-attachments/assets/9234be4f-32b9-4aad-9cdd-392c00206d64
@@ -151,8 +153,8 @@ Here are some examples demonstrating how to use the `Intel-Project-TeleICU`:
    
    _People detection result_
 
-   https://github.com/user-attachments/assets/1778f939-e73a-46be-a27a-334e8114e92e
-   
+   Uploading processed_video_000815.mp4…
+
    _Only patient cropped result_
    
    ![Video results2](demo-content/result2.png)
