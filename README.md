@@ -248,8 +248,6 @@ Project Link: [https://github.com/Jagdish9903/Intel-Project-TeleICU](https://git
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * [Ultralytics Yolo documentation and tutorials](https://docs.ultralytics.com/)
 * [Mediapipe documentation](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Streamlit documentation](https://flexbox.malven.co/)
