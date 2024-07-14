@@ -147,7 +147,7 @@ Here are some examples demonstrating how to use the `Intel-Project-TeleICU`:
    
    _People detection result_
    
-   ![Video results1](demo-content/result1.png)
+    [![Watch the video](https://github.com/Jagdish9903/Intel-Project-TeleICU/blob/4bc053e42266131d045a4852eb99ce64b12766d8/demo%20videos/Screenshot%20(180).png)](https://github.com/Jagdish9903/Intel-Project-TeleICU/blob/main/demo%20videos/processed_video_004553.mp4)
 
    _Only patient cropped result_
    
@@ -155,7 +155,7 @@ Here are some examples demonstrating how to use the `Intel-Project-TeleICU`:
 
    _Patient analysis result_
    
-   ![Video results3](demo-content/result3.png)
+   [![Watch the video](https://github.com/Jagdish9903/Intel-Project-TeleICU/blob/4bc053e42266131d045a4852eb99ce64b12766d8/demo%20videos/Screenshot%20(181).png)](https://github.com/Jagdish9903/Intel-Project-TeleICU/blob/96a1e0bc00b4787d41783c75d1af87b947a01a8f/demo%20videos/vid_walk_gpu10.mp4)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
