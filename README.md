@@ -1,3 +1,7 @@
+
+https://github.com/user-attachments/assets/a18fe836-af66-4d2b-a927-f8aa690554aa
+
+https://github.com/user-attachments/assets/9234be4f-32b9-4aad-9cdd-392c00206d64
 <a id="readme-top"></a>
 
 
@@ -146,17 +150,16 @@ Here are some examples demonstrating how to use the `Intel-Project-TeleICU`:
 5. Video results:
    
    _People detection result_
-   
-    [![Watch the video](https://github.com/Jagdish9903/Intel-Project-TeleICU/blob/4bc053e42266131d045a4852eb99ce64b12766d8/demo%20videos/Screenshot%20(180).png)](https://github.com/Jagdish9903/Intel-Project-TeleICU/blob/main/demo%20videos/processed_video_004553.mp4)
 
+   https://github.com/user-attachments/assets/1778f939-e73a-46be-a27a-334e8114e92e
+   
    _Only patient cropped result_
    
    ![Video results2](demo-content/result2.png)
 
    _Patient analysis result_
    
-   [![Watch the video](https://github.com/Jagdish9903/Intel-Project-TeleICU/blob/4bc053e42266131d045a4852eb99ce64b12766d8/demo%20videos/Screenshot%20(181).png)](https://github.com/Jagdish9903/Intel-Project-TeleICU/blob/96a1e0bc00b4787d41783c75d1af87b947a01a8f/demo%20videos/vid_walk_gpu10.mp4)
-
+   Uploading patient_video_000815.mp4…
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
