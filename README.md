@@ -145,15 +145,15 @@ Here are some examples demonstrating how to use the `Intel-Project-TeleICU`:
    
 5. Results:
    
-   _**People detection result**_
+   _**People Detection Video Result**_
 
-   [![Watch the video](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/Screenshot(180).png](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/processed_video_005052.mp4)
+   [![Watch the video](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/Screenshot1.png)](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/processed_video_005052.mp4)
 
-   _**Patient analysis result**_
+   _**Patient Analysis Video Result**_
 
-   https://github.com/user-attachments/assets/55084107-c8d6-4739-8458-d39bfabd2a39
-
-   _**Patient's acitvity graph over time**_
+   [![Watch the video](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/Screenshot2.png)](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/patient_video_005052.mp4)
+   
+   _**Patient's Acitvity Graph Over Time**_
    
    ![Screenshot (186)](https://github.com/user-attachments/assets/46f69e01-5201-47bc-8a0f-2b3fa0273912)
 
