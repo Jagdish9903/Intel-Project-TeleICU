@@ -147,7 +147,7 @@ Here are some examples demonstrating how to use the `Intel-Project-TeleICU`:
    
    _**People detection result**_
 
-   https://github.com/user-attachments/assets/3fc64f23-ed1d-42a2-85ea-7dd9376f6599
+   [![Watch the video](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/Screenshot(180).png](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/processed_video_005052.mp4)
 
    _**Patient analysis result**_
 
