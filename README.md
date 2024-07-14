@@ -150,8 +150,8 @@ Here are some examples demonstrating how to use the `Intel-Project-TeleICU`:
    https://github.com/user-attachments/assets/3fc64f23-ed1d-42a2-85ea-7dd9376f6599
 
    _**Patient analysis result**_
-   
-  https://github.com/user-attachments/assets/55084107-c8d6-4739-8458-d39bfabd2a39
+
+   https://github.com/user-attachments/assets/55084107-c8d6-4739-8458-d39bfabd2a39
 
    _**Patient's acitvity graph over time**_
    
