@@ -67,23 +67,39 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-
 TeleICU is designed to enhance patient care by leveraging technology to provide remote monitoring and support in intensive care units (ICUs). This project aims to bridge the gap between healthcare professionals and patients by providing real-time data and communication tools.
 
-Here's why teleICU is important:
+**Here's why teleICU is important:**
 
-Improved patient outcomes through continuous monitoring.
-Efficient use of healthcare resources.
-Enhanced collaboration among healthcare professionals.
+- Improved patient outcomes through continuous monitoring.
+- Efficient use of healthcare resources.
+- Enhanced collaboration among healthcare professionals.
 
-This project uses computer vision techniques to detect and identify subjects like patients, doctors and others. And also analyse the activities of patients.
+This project presents an innovative system for analyzing ICU videos. The system leverages two machine learning models to achieve the following:
+
+1. **People Detection and Classification**: Identifies and categorizes individuals in the video into three categories: doctors, patients, and other personnel.
+2. **Patient Action Detection**: Detects and classifies the actions of patients in the ICU based on a sequence of video frames.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Features
+
+1. **People Detection and Classification**:
+   - Utilizes a YOLOv8 model trained on a manually annotated dataset of ICU show images.
+   - Categorizes individuals in the video into doctors, patients, and other personnel.
+   - Extracts portions of frames containing patients and creates a separate video.
+
+2. **Patient Action Detection**:
+   - Uses a second model, an LSTM-based action detection model, to classify patient actions from the extracted video.
+   - Actions detected include clapping, sitting, standing still, and walking.
+   - Generates a final video showcasing the detected actions and a graph displaying action probabilities over time.
+
+3. **Graphical Representation**:
+   - Displays a graph of action probabilities over time, with timestamps on the x-axis and activity percentage on the y-axis.
+   - Plots points for the highest probability action at each timestamp, with unique colors for different actions.
 
 
-### Built With
+### Technology Stack
 
 This section highlights the key frameworks and libraries that were instrumental in building the teleICU project. Each technology was carefully selected to ensure robust functionality, scalability, and real-time capabilities required for a teleICU system.
 
@@ -92,6 +108,14 @@ This section highlights the key frameworks and libraries that were instrumental 
 * [![MediaPipe][MediaPipe]][MediaPipe-url]
 * [![TensorFlow][TensorFlow]][TensorFlow-url]
 * [![Streamlit][Streamlit]][Streamlit-url]
+- **Streamlit**: For creating the user interface.
+- **OpenCV**: For video processing and frame extraction.
+- **Ultralytics YOLOv8**: For people detection and classification.
+- **TensorFlow**: For patient action detection using an LSTM model.
+- **MediaPipe**: For extracting keypoints and landmarks.
+- **NumPy**: For numerical computations.
+- **MoviePy**: For video editing and processing.
+- **Matplotlib**: For generating graphical representations.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,26 +156,41 @@ The installation steps provided below will guide you through cloning the reposit
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## System Workflow
+
+**Demo Video of Working Application :**
+
+[![Watch the video](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/Screenshot3.png)](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/TeleICU.mp4)
 
 Here are some examples demonstrating how to use the `Intel-Project-TeleICU`:
-1. Final Application Demo Video of Streamlit:
-   
-   [![Watch the video](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/Screenshot3.png)](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/TeleICU.mp4)
-   
-5. Results:
-   
+
+**1) Video Upload:**
+   - The user uploads a video via the Streamlit interface.
+   - The system processes the video to detect and classify people into doctors, patients, and other personnel.
+
+**2) People Detection:**
+   - The YOLOv8 model identifies and categorizes individuals in the video.
+   - Portions of frames containing patients are extracted and compiled into a new video.
+
    _**People Detection Video Result**_
 
    [![Watch the video](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/Screenshot1.png)](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/processed_video_005052.mp4)
 
+**3) Action Detection:**
+   - The LSTM-based model takes the patient-only video as input and detects actions based on 30-frame sequences.
+   - Due to the LSTM's sequence-based approach, action predictions occur after 30 frames of the actual action.
+
    _**Patient Analysis Video Result**_
 
    [![Watch the video](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/Screenshot2.png)](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/patient_video_005052.mp4)
-   
+
+**4) Graphical Representation:**
+   - A graph is generated to display the probabilities of detected actions over time.
+   - The graph helps visualize the confidence and distribution of actions throughout the video.
+
    _**Patient's Acitvity Graph Over Time**_
    
-   ![Screenshot (186)](https://github.com/user-attachments/assets/46f69e01-5201-47bc-8a0f-2b3fa0273912)
+   ![Screenshot (186)](https://github.com/user-attachments/assets/46f69e01-5201-47bc-8a0f-2b3fa0273912)   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,6 +245,24 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Considerations and Future Improvements
+
+- **Action Detection Accuracy**:
+  - The action detection model's predictions are currently not ideal due to a limited training dataset.
+  - With a more extensive and diverse dataset, the accuracy of action detection can be significantly improved.
+  - Future work should focus on gathering more labeled data to train the action detection model.
+
+- **Real-time Processing**:
+  - Enhancements to the processing speed and real-time capabilities of the system can be made.
+  - Incorporating GPU acceleration and optimizing model performance can help achieve this goal.
+ 
+## Conclusion
+
+The ICU Video Analysis System demonstrates the potential of using machine learning for automating the analysis of ICU videos. Despite the current limitations in action detection accuracy, the system lays a strong foundation for future improvements. With better datasets and optimized models, the system can provide accurate and real-time insights into patient activities, aiding in effective ICU monitoring and management.
+
+---
+
+We hope this project serves as a valuable step towards enhancing ICU monitoring systems and invites further research and development in this critical area. Contributions and feedback are welcome to improve the system's performance and capabilities.
 
 
 <!-- CONTRIBUTING -->
