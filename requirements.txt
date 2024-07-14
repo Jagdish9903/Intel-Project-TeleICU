@@ -1,0 +1,8 @@
+streamlit
+opencv-python
+ultralytics
+mediapipe
+tensorflow
+numpy
+moviepy
+matplotlib
