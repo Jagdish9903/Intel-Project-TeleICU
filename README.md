@@ -1,9 +1,3 @@
-
-https://github.com/user-attachments/assets/e5dc359d-ceae-4f0a-a792-bae0f61d3e43
-
-https://github.com/user-attachments/assets/a18fe836-af66-4d2b-a927-f8aa690554aa
-
-https://github.com/user-attachments/assets/9234be4f-32b9-4aad-9cdd-392c00206d64
 <a id="readme-top"></a>
 
 
@@ -149,19 +143,19 @@ Here are some examples demonstrating how to use the `Intel-Project-TeleICU`:
    
    ![Upload video](demo-content/upload_video.png)
    
-5. Video results:
+5. Results:
    
    _People detection result_
 
-   Uploading processed_video_000815.mp4…
-
-   _Only patient cropped result_
-   
-   ![Video results2](demo-content/result2.png)
+   Uploading processed_video_003531.mp4…
 
    _Patient analysis result_
    
-   Uploading patient_video_000815.mp4…
+   https://github.com/user-attachments/assets/5dc3dc38-fc21-4543-953c-01cf5039ea91
+   
+   _Patient's acitvity graph over time_
+   
+   ![Screenshot (186)](https://github.com/user-attachments/assets/46f69e01-5201-47bc-8a0f-2b3fa0273912)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
