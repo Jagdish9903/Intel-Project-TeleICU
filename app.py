@@ -7,6 +7,8 @@ import datetime
 import mediapipe as mp
 import numpy as np
 import tensorflow as tf
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # Load the YOLO model
 model_path = 'icu_show_images_model.pt'
@@ -37,7 +39,7 @@ class_colors = {
     # Add more colors if you have more classes
 }
 
-colors = [(245, 117, 16), (117, 245, 16), (16, 117, 245),(255,0,0)]
+colors = [(245, 117, 16), (117, 245, 16), (16, 117, 245), (255,0,0)]
 
 res = None
 image = None
@@ -81,8 +83,39 @@ def extract_keypoints(results):
     rh = np.array([[res.x, res.y, res.z] for res in results.right_hand_landmarks.landmark]).flatten() if results.right_hand_landmarks else np.zeros(21*3)
     return np.concatenate([pose, face, lh, rh])
 
+def plot_activity_graph(activity_data):
+    df = pd.DataFrame(activity_data, columns=['Timestamp', 'Activity', 'Probability'])
+    
+    # Normalize probabilities to 0-100%
+    df['Probability'] = df['Probability'] * 100
+
+    fig, ax = plt.subplots()
+    
+    # Assign unique colors to each activity
+    activity_colors = {
+        'Clapping': 'blue',
+        'Sitting': 'green',
+        'Standing Still': 'orange',
+        'Walking': 'red'
+    }
+
+    for activity in df['Activity'].unique():
+        activity_data = df[df['Activity'] == activity]
+        ax.plot(activity_data['Timestamp'], activity_data['Probability'], marker='o', color=activity_colors[activity], label=activity)
+
+    plt.xlabel('Time (s)')
+    plt.ylabel('Activity Probability (%)')
+    plt.title('Activity Detection Probability Over Time')
+    plt.ylim(0, 100)
+    plt.legend()
+    st.pyplot(fig)
+
+
 # Function to save video
 def save_video(input_path, output_path, model, actions, threshold=0.8):
+
+    activity_data = []
+
     # Initialize MediaPipe holistic model
     mp_holistic = mp.solutions.holistic
 
@@ -126,8 +159,11 @@ def save_video(input_path, output_path, model, actions, threshold=0.8):
                 global res
                 global action
                 if frame_idx % 4 == 0:
-                  res = model.predict(np.expand_dims(sequence, axis=0))[0]
-                  action = actions[np.argmax(res)]
+                    res = model.predict(np.expand_dims(sequence, axis=0))[0]
+                    action = actions[np.argmax(res)]
+                    timestamp = frame_idx / fps
+                    highest_prob = res[np.argmax(res)]
+                    activity_data.append((timestamp, action, highest_prob))
 
                 # Viz logic
                 if res[np.argmax(res)] > threshold:
@@ -159,11 +195,13 @@ def save_video(input_path, output_path, model, actions, threshold=0.8):
         out3.release()
         cv2.destroyAllWindows()
 
+    return output_path, activity_data
+
 pat = []
 cropped_frame = None
 
 fourcc2 = cv2.VideoWriter_fourcc(*'XVID')
-out2 = cv2.VideoWriter("Patients_video_second.avi", fourcc2, 24, (848, 384))
+out2 = cv2.VideoWriter("Patients_cut_video.avi", fourcc2, 24, (848, 384))
 
 def process_frame(frame, frame_index, patient_output_path):
     global global_boxes
@@ -187,22 +225,22 @@ def process_frame(frame, frame_index, patient_output_path):
             if x1 == -1:
                 x1 = min_x1
             else:
-                if(abs(x1 - min_x1) > 60):
+                if(abs(x1 - min_x1) > 80):
                     x1 = min_x1
             if x2 == -1:
                 x2 = max_x2
             else:
-                if(abs(x2 - max_x2) > 60):
+                if(abs(x2 - max_x2) > 80):
                     x2 = max_x2
             if y1 == -1:
                 y1 = min_y1
             else:
-                if(abs(y1 - min_y1) > 90):
+                if(abs(y1 - min_y1) > 40):
                     y1 = min_y1
             if y2 == -1:
                 y2 = max_y2
             else:
-                if(abs(y2 - max_y2) > 90):
+                if(abs(y2 - max_y2) > 40):
                     y2 = max_y2
             
             conf = global_boxes.conf[i]
@@ -210,7 +248,7 @@ def process_frame(frame, frame_index, patient_output_path):
             # print(global_boxes[i])
             # print(cls)
             # a = input()
-            if cls == 1:
+            if cls == 1 and cropped_frame != None:
                 cropped_frame = frame[y1:y2, x1:x2]
                 cropped_frame = cv2.resize(cropped_frame, (848, 384))
                 # cv2.imwrite("Patient"+str(frame_index)+".jpg", cropped_frame)
@@ -329,14 +367,14 @@ if uploaded_file is not None:
     pat = st.empty()
     pat.header("Processing Patient's Activity Video...")
 
-    save_video(input_path, output_path, model2, actions)
+    processed_video_path, activity_data = save_video(video_path, patient_output_video_path, model2, actions)
 
     print("you got it!")
     
     # new patient only frame
-    if os.path.exists(output_path):
-        input_file = output_path
-        output_file = processed_patient_video_path
+    if os.path.exists(processed_video_path):
+        input_file = processed_video_path
+        output_file = processed_video_path[:-4] + '.mkv'
 
         clip = VideoFileClip(input_file)
 
@@ -346,4 +384,7 @@ if uploaded_file is not None:
         clip.write_videofile(output_file, codec="libx264")
         st.video(output_file)
 
-        st.success(f"Patient's Activity Video saved to: {processed_patient_video_path}")
+        st.success(f"Patient's Activity Video saved to: {processed_video_path}")
+    
+    st.header("Activity Detection Over Time")
+    plot_activity_graph(activity_data)
