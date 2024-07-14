@@ -135,13 +135,9 @@ The installation steps provided below will guide you through cloning the reposit
 ## Usage
 
 Here are some examples demonstrating how to use the `Intel-Project-TeleICU`:
-1. Streamlit interface:
+1. Final Application Demo Video of Streamlit:
    
-   ![Streamlit interface](demo-content/streamlit_interface.png)
-
-3. Upload video:
-   
-   ![Upload video](demo-content/upload_video.png)
+   [![Watch the video](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/Screenshot3.png)](https://raw.githubusercontent.com/Jagdish9903/Intel-Project-TeleICU/main/TeleICU.mp4)
    
 5. Results:
    
