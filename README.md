@@ -43,7 +43,16 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#technology-stack">Project Presentation</a></li>
+      </ul>
+      <ul>
+        <li><a href="#technology-stack">Features</a></li>
+      </ul>
+      <ul>
+        <li><a href="#technology-stack">Technology Stack</a></li>
+      </ul>
+      <ul>
+        <li><a href="#about-github-repository">About Github Repository</a></li>
       </ul>
     </li>
     <li>
@@ -53,9 +62,11 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#system-workflow">System Workflow</a></li>
     <li><a href="#approach-taken">Approach Taken</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#considerations-and-future-improvements">Considerations and Future Improvements</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -68,6 +79,10 @@
 ## About The Project
 
 TeleICU is designed to enhance patient care by leveraging technology to provide remote monitoring and support in intensive care units (ICUs). This project aims to bridge the gap between healthcare professionals and patients by providing real-time data and communication tools.
+## Project Presentation
+
+### [🚀 **Click here to view the detailed project PPT!** 🚀](https://www.canva.com/design/DAGK7CNX3M0/m1ZAUU2e78wFqh-5YFAGGw/edit?utm_content=DAGK7CNX3M0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 
 **Here's why teleICU is important:**
 
@@ -115,7 +130,31 @@ This section highlights the key frameworks and libraries that were instrumental 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- ABOUT THE PROJECT -->
+## About Github Repository
 
+Description of each file/folder of the repo and its relevance.
+
+1. **AnnotationsYOLO**: Web scraped dataset yolo annotations for person classification model.
+2. **AnnotationsYOLO2**: ICU webshow scraped dataset yolo annotations person classification model.
+3. **DoctorImages**: Web scrapped images person classification model. (first 800 images)
+4. **DoctorImages2**: Web scrapped images person classification model. (rest of images)
+5. **ICU season 1**: ICU webshow frames as images.
+6. **ICU show annotations**: ICU webshow images' json annotation. 
+7. **datasets**: ICU webshow scraped images finished dataset.(Our current model trained on this)
+8. **datasets2**: Web scraped images finished dataset.(Our current model is not trained on this, was used in development stage)
+10. **video test**: Testing/inferencing videos.
+11. **Believers-TeleICU.pdf**: PPT for detailed explaination of the project.
+12. **Doctors.ipynb**: Training, testing and inferencing of person classification model notebook. 
+13. **Patient_classification_model.ipynb**: Training, testing and inferencing of patient's activity classification model notebook. 
+18. **TeleICU.mp4**: Infered video by the application.
+19. **action_30.h5**: Trained model for patient's activity classification.
+20. **app.py** Final inference code with streamlit interface.
+21. **icu_show_images_model.pt**: Trained model for patient's activity classification.
+22. **model training data.txt**: Training process data.
+25. **requirements.txt**: List of all dependencies for running the application.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
