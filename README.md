@@ -23,7 +23,7 @@
   <p align="center">
     An Intel Unnati summer internship project !
     <br />
-    <a href="https://github.com/Jagdish9903/Intel-Project-TeleICU"><strong>Explore the project repo »</strong></a>
+    <a href="https://www.canva.com/design/DAGK7CNX3M0/m1ZAUU2e78wFqh-5YFAGGw/edit?utm_content=DAGK7CNX3M0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><strong>Project PPT for detailed explanation »</strong></a>
     <br />
     <br />
     <a href="https://github.com/Jagdish9903/Intel-Project-TeleICU">View Demo</a>
