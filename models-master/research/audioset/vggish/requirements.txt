@@ -1,6 +1,0 @@
-numpy
-resampy
-tensorflow
-tf_slim
-six
-soundfile
