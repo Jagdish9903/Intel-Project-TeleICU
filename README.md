@@ -287,6 +287,10 @@ Project Link: [https://github.com/Jagdish9903/Intel-Project-TeleICU](https://git
 * [Tensorflow guide](https://grid.malven.co/)
 * [Kaggle human-activity-recognition-video-dataset](https://www.kaggle.com/datasets/sharjeelmazhar/human-activity-recognition-video-dataset)
 * [Youtube @Holly Mullens ICU web show](https://www.youtube.com/@hollymullens8340)
+* [OpenCV](https://opencv.org/)
+* [NumPy](https://numpy.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [MoviePy](https://pypi.org/project/moviepy/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
