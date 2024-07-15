@@ -21,6 +21,10 @@ mp_drawing = mp.solutions.drawing_utils # Drawing utilities
 
 # Global variable to store bounding boxes
 global_boxes = None
+cap =   None
+width = 848
+height = 384
+fps = 24
 
 colors = [(245,117,16), (117,245,16), (16,117,245)]
 def prob_viz(res, actions, input_frame, colors):
@@ -200,9 +204,6 @@ def save_video(input_path, output_path, model, actions, threshold=0.8):
 pat = []
 cropped_frame = None
 
-fourcc2 = cv2.VideoWriter_fourcc(*'XVID')
-out2 = cv2.VideoWriter("Patients_cut_video.avi", fourcc2, 24, (848, 384))
-
 def process_frame(frame, frame_index, patient_output_path):
     global global_boxes
 
@@ -225,22 +226,22 @@ def process_frame(frame, frame_index, patient_output_path):
             if x1 == -1:
                 x1 = min_x1
             else:
-                if(abs(x1 - min_x1) > 80):
+                if(abs(x1 - min_x1) > int(width * 0.1)):
                     x1 = min_x1
             if x2 == -1:
                 x2 = max_x2
             else:
-                if(abs(x2 - max_x2) > 80):
+                if(abs(x2 - max_x2) > int(width * 0.1)):
                     x2 = max_x2
             if y1 == -1:
                 y1 = min_y1
             else:
-                if(abs(y1 - min_y1) > 40):
+                if(abs(y1 - min_y1) > int(height * 0.1)):
                     y1 = min_y1
             if y2 == -1:
                 y2 = max_y2
             else:
-                if(abs(y2 - max_y2) > 40):
+                if(abs(y2 - max_y2) > int(height * 0.1)):
                     y2 = max_y2
             
             conf = global_boxes.conf[i]
@@ -250,7 +251,7 @@ def process_frame(frame, frame_index, patient_output_path):
             # a = input()
             if cls == 1 and cropped_frame != None:
                 cropped_frame = frame[y1:y2, x1:x2]
-                cropped_frame = cv2.resize(cropped_frame, (848, 384))
+                cropped_frame = cv2.resize(cropped_frame, (width, height))
                 # cv2.imwrite("Patient"+str(frame_index)+".jpg", cropped_frame)
                 out2.write(cropped_frame)
 
@@ -292,6 +293,9 @@ def process_videos(video_path, output_path, patient_output_path):
     # print(height)
     # print(fps)
     # a = input()
+
+    fourcc2 = cv2.VideoWriter_fourcc(*'XVID')
+    out2 = cv2.VideoWriter("Patients_cut_video.avi", fourcc2, int(fps), (width, height))
 
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
