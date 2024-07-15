@@ -43,15 +43,9 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#technology-stack">Project Presentation</a></li>
-      </ul>
-      <ul>
-        <li><a href="#technology-stack">Features</a></li>
-      </ul>
-      <ul>
+        <li><a href="#project-presentation">Project Presentation</a></li>
+        <li><a href="#features">Features</a></li>
         <li><a href="#technology-stack">Technology Stack</a></li>
-      </ul>
-      <ul>
         <li><a href="#about-github-repository">About Github Repository</a></li>
       </ul>
     </li>
